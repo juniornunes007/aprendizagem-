@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <h1 id="livros">cadastro de livros</h1>
+    <form action="#">
+        <div class="container">
+            <div>
+                <label for="titulo">titulo
+                    <input type="text" id="titulo" placeholder="enforme o titulo" name="titulo" required>
+            </div>
+            <div>
+                <label for="autor">autor</label>
+                <input type="text" id="autor" name="autor" placeholder="enforme o autor" required>
+            </div>
+            <div>
+                <label for="ano">ano</label>
+                <input type="number" id="ano" name="ano" placeholder="enforme o ano" required>
+            </div>
+            <div>
+                <label for="genero">Genero
+                    <input type="checkbox" name="genero" id="romance" value="romance">romance
+                    <input type="checkbox" name="genero" id="ficcao" value="ficcao">ficção
+                    <input type="checkbox" name="genero" id="aventura" value="aventura">aventura
+                    <input type="checkbox" name="genero" id="comedia" value="comedia">comedia
+                    <input type="checkbox" name="genero" id="terror" value="terror">terror
+                </label>
+            </div>
+            <div>
+                <button type="submit" id="salvarlivros" name="cadastrar" onclick="cadastrarlivro()">cadratrar</button>
+                 
+            </div>
+        </div>
+            <script src="livro.js"></script>
+
+    </form>
+</body>
+
+</html>
